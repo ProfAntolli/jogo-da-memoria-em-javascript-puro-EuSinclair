@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+
+  <title>Memory Game</title>
+
+  <link rel="stylesheet" href="styles.css">
+<script type="text/javascript" src="https://gc.kis.v2.scr.kaspersky-labs.com/FD126C42-EBFA-4E12-B309-BB3FDD723AC1/main.js?attr=z3aXSd3M9BKNF43ovHw9z157Hm6ug1Uwd1a5sL3b-MsvGd-tGb4Ut6sMesuy09cPR_adp9WFLvI1eJyMkGE9Jnq8RsuJAdvddYzcbhHTLHw4Eu0kQ9ifEh4XHvibHJX5cifvNb53X14-v-Ii_iEHpP0wPo5fBdsoomHFFR8WWiQZR-mPHIbwrP3ZLe4e9MoCCvpypTrUgLR0xScJjZNJ8Z5jhReufo5PRa0pw27_-DOJ26h5oZHLLijYHimpN2tUsNFcQfTaihgoO26Ap5yKO78pke3IVpy3NlJ06ZIftjOUvT6cauOKkBGZT49d6pwmJJUKQQKbhHJYXohjFEk_a-rQ0EM79Cp0Si8os4f2Y2uT_j9GQCSZFISKSho8UiCbXj-UJQeT7osFe3IyxkIDSDFgx0avggzrdX-bwJE5lnjfX2SJ9Zuva2roajR_PhoPPbMtBS8XN0syrulUxyYpIqwXeuxnVH1_ZitXjua4mb2eeF_8g8uukEIs5wyaSQy7x2PNllImOs19CbeDXUbOKfGuVwlM7FS3wQ6Eq5FnQlzGeRXpb2aT-OOAAqa3GKkpa2p5ggCeLH9Chzwfv8_1hveJesqUNc5PNorUxHQtswEo3i4dhSYqtKVp1tslnEsFljVnvuPtGRNLmJEppQ7Z5A0nRmRzSRsilG-YhbGMCRnF9-NOdR5UX0gUrr9dzs6c2m1OyP_VRveLr-p0P7i39K0vpPv2T9wK4HM5JMEZXi6MbZ3UGVjCzQCJnbZZxMMz_87nPjrfyM0Nkw0_P5qdzlGFGOxOK9jmowymADnp4RKikqQYi61wuai1tX4kwG3FXNqTqG1EXP33MAx5mvhBXQ2MFki1_22kRznpLxyrXw0s0iv44o-TkFMxm_uYlxn9AkvVa-nXL5STcem5Xgeb6T-r6rNf6LsUCZjM3LP2atXAd090y1CEYVV9heG-2hvThiuPAgaIAEa3n2UmrNUvUf7Q542sf13Zbq_ktyoyOi2hrs80yPlz0YX3VeztgzsNtDvNfyVGT40sjvhn10MlOK1ZqsnVg8v95fjSveH_aVE5YOWKT0Txuu9s1NwQKfdY7wHCmSr9bsrZXHIoO17dMyBd5vezTmwZrHmmIBrBt8PlbLIIvZf9A8VAGDQNV6gY5oa3UspWYv5g7zpnbXloUqwxxicUuG84E-5hrVRDrwe24GIwOMzS0YX8dq77oVJ4Xi65m3VbNeTXlafL73-H48PFGJ1lyQJLlbEYcwrIhjLGY2NUILoxhFIY4Y8L59POygOBvGLGgRMlvCDWtiQ_M91bT6E1Yx8rvLXXqz8SraNnqYqgjFWAmD1xI2G2s6Fj4ETLsLnTZorCxC-6GxQ5b3JAgr0A2SqieorTLc-G8z0co9Uf_1TcU_znwAta0sFP7Dlo_dIWYi4XSuw2rkLOWA" nonce="9f9f260aa1922b133ad3dd3dd048d837" charset="UTF-8"></script><link rel="stylesheet" crossorigin="anonymous" href="https://gc.kis.v2.scr.kaspersky-labs.com/E3E8934C-235A-4B0E-825A-35A08381A191/abn/main.css?attr=aHR0cHM6Ly9tYWlsLWF0dGFjaG1lbnQuZ29vZ2xldXNlcmNvbnRlbnQuY29tL2F0dGFjaG1lbnQvdS8xLz91aT0yJmlrPTUyMGNjNjAxNjImYXR0aWQ9MC4xJnBlcm1tc2dpZD1tc2ctZjoxNzQwNjA0MzIxNDYwNTU4MjA0JnRoPTE4MjdkZTY4ODMyYTk5N2Mmdmlldz1hdHQmZGlzcD1zYWZlJnJlYWxhdHRpZD1mX2w2a3YxOXloMSZzYWRkYmF0PUFOR2pkSjl3aGotOXpjUXlaRXVIVHNDX09Vd3pfbWs0N3JKVld3UWZlN05yOU1lbVctcnpTOENfdXVYT2pydWNKVUQ1aXFJVEJZSGlPVXhBeHgxR0lsUGI4TnBpN2dzVmVtOFRPenpIU0ZxdjFjRG5IbkJqZHhFLWtsTVk1d2k3bHRjbkk5SGNCdXBSMy1IQ0FnS1g0dDhfZDBHdjBzQVRPM2lTdkF1REdSZmU5M1MxbXRyVy1iUmRyM083UFNHRGlvS04yWFFReEtocW5DSGxGREFUNmw5ZG1pZlE3VGpMTzVOWkF2aDFfYnUxeUVoNWF4ZnhORUVTaEc4RGYtV3pTNkdMY1VZb192RjBTVXJHNGFDckpjOURwN3VmTXp3LXBZTVVwNXR5Q0hJSVpFdVJOUENBTHVWX1FZSmkyZUNIbkZjYWltWTlOcU0tR1JDbmdINHhhOWF6aVVSNnNZeE5ySGgzLWE5aF9OSW5SXzJISXcyc3dzS0YwMzE1Nkt5R3p5S2pRa3dzWEZFT3JqUEo4UE1jNF9iTzEyNFBnQVhmUWFFUENGM2F0aWJDTTFJaHRqZ21janRXMmFVMFlodko1VlBWbG1XSUhlQXB4a01qaC1KdmRuQWlfX2JxMEFtTjN2aTBENGFsaVRzVkdoZ203S0NOTmxzaThyaVBzaTFCWXZZRjVLU0hsdFd2TTlJbjZNMUttbVdYZlpnWU4wbkhjOVVCck1BajZOREplWWtaOTZEM0k2dHZZZGFaOEIzMTNHMXZlNzV6RkthQzVOZExsWlFRS0cxZllnY3pnOVBBeExtQnVROWRsUURqejB5c2psdExibUhHNTltbTdyeXN4S1N1T3FzcUp5aTNzb013cW1haGRzU1owMUxjMUNNRFVSV3owbWozUnlMbEZ1S0ptd2NwOWFHVVVyVzJzNVczcVVVS295eG10c1JIeTVNOUg5MXdGc1FKeTRJeE1lVC1WSDZTSzJTWnRodHI0RnNNWERVMXVfV1d4UVQxTVVSLWxVSXNMbnFmUVVQWFdnbFR0LVlIU0dja1lLSU56ZTFoaEYyRWhyQkxadmJoNHBhYmRRTERzTF9LZElfbjU3RVJSNVAzSzN5V0M3dUJ0cDJjSUdUaw"/></head>
+<body>
+  <section class="memory-game">
+    <div class="memory-card" data-framework="carro-01">
+      <img class="front-face" src="img/carro-01.png" alt="C01" />
+      <img class="back-face" src="img/capa.png" alt="Capa" />
+    </div>
+    <div class="memory-card" data-framework="carro-01">
+      <img class="front-face" src="img/carro-01.png" alt="C01" />
+      <img class="back-face" src="img/capa.png" alt="Capa" />
+    </div>
+
+    <div class="memory-card" data-framework="carro-02">
+      <img class="front-face" src="img/carro-02.png" alt="C02" />
+      <img class="back-face" src="img/capa.png" alt="Capa" />
+    </div>
+    <div class="memory-card" data-framework="carro-02">
+      <img class="front-face" src="img/carro-02.png" alt="C02" />
+      <img class="back-face" src="img/capa.png" alt="Capa" />
+    </div>
+
+    <div class="memory-card" data-framework="carro-03">
+      <img class="front-face" src="img/carro-03.png" alt="C03" />
+      <img class="back-face" src="img/capa.png" alt="Capa" />
+    </div>
+    <div class="memory-card" data-framework="carro-03">
+      <img class="front-face" src="img/carro-03.png" alt="C03" />
+      <img class="back-face" src="img/capa.png" alt="Capa" />
+    </div>
+
+    <div class="memory-card" data-framework="carro-04">
+      <img class="front-face" src="img/carro-04.png" alt="C04" />
+      <img class="back-face" src="img/capa.png" alt="Capa" />
+    </div>
+    <div class="memory-card" data-framework="carro-04">
+      <img class="front-face" src="img/carro-04.png" alt="C04" />
+      <img class="back-face" src="img/capa.png" alt="Capa" />
+    </div>
+
+    <div class="memory-card" data-framework="carro-05">
+      <img class="front-face" src="img/carro-05.png" alt="C05" />
+      <img class="back-face" src="img/capa.png" alt="Capa" />
+    </div>
+    <div class="memory-card" data-framework="carro-05">
+      <img class="front-face" src="img/carro-05.png" alt="C05" />
+      <img class="back-face" src="img/capa.png" alt="Capa" />
+    </div>
+
+    <div class="memory-card" data-framework="carro-06">
+      <img class="front-face" src="img/carro-06.png" alt="C06" />
+      <img class="back-face" src="img/capa.png" alt="Capa" />
+    </div>
+    <div class="memory-card" data-framework="carro-06">
+      <img class="front-face" src="img/carro-06.png" alt="C06" />
+      <img class="back-face" src="img/capa.png" alt="Capa" />
+    </div>
+  </section>
+
+  <script src="scripts.js"></script>
+</body>
+</html>
